@@ -7,8 +7,8 @@
 
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Architects+Daughter&amp;display=swap"><link rel="stylesheet" href="/UGA-WebDAWGS-Docs-Pages/assets/css/styles.277274ff.css">
-<script src="/UGA-WebDAWGS-Docs-Pages/assets/js/runtime~main.5c59cb15.js" defer="defer"></script>
-<script src="/UGA-WebDAWGS-Docs-Pages/assets/js/main.6eced584.js" defer="defer"></script>
+<script src="/UGA-WebDAWGS-Docs-Pages/assets/js/runtime~main.114ee872.js" defer="defer"></script>
+<script src="/UGA-WebDAWGS-Docs-Pages/assets/js/main.c7d71dcb.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
@@ -206,7 +206,8 @@ If the attribute does not exist on the element, <code>setAttribute()</code> adds
 <p>Here&#x27;s an example that sets the class attribute to <em>highlight</em>:</p>
 <div class="language-javascript codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-javascript codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">parentEl</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">setAttribute</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&#x27;class&#x27;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&#x27;highlight&#x27;</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><br></span></code></pre></div></div>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="events">Events<a href="#events" class="hash-link" aria-label="Direct link to Events" title="Direct link to Events">​</a></h2>
-<p>HTML events are signals that something has occurred within the web page or browser environment, enabling JavaScript to react and execute code in response in the DOM api.  These events can originate from various sources and are tracked by the <strong>browser</strong>:</p>
+<p>Client-side programs are largely <strong>event</strong> driven; they typically wait for the user
+to do something. HTML events are signals that something has occurred within the web page or browser environment, enabling JavaScript to react and execute code in response in the DOM api.  These events can originate from various sources and are tracked by the <strong>browser</strong>:</p>
 <ol>
 <li>User Interactions:<!-- -->
 <ul>
@@ -224,7 +225,9 @@ If the attribute does not exist on the element, <code>setAttribute()</code> adds
 </li>
 <li>Custom Events: created by developers for custom event handling</li>
 </ol>
-<p>When an event occurs, you can write JavaScript that we call an <strong>event handler</strong> that will be executed.</p>
+<p>Event-driven JavaScript programs register callback functions for certain events and the web browser
+invokes those functions whenever the events occur. The callback functions are called event <strong>handlers</strong>
+or event <strong>listeners</strong>.</p>
 <ul>
 <li>Event handlers are JavaScript functions.</li>
 <li>When an event occurs on an element, the handler function is executed.</li>
