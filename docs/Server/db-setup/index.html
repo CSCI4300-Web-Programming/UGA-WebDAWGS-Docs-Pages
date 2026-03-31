@@ -8,8 +8,8 @@
 
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Architects+Daughter&amp;display=swap"><link rel="stylesheet" href="/UGA-WebDAWGS-Docs-Pages/assets/css/styles.a0dec3f7.css">
-<script src="/UGA-WebDAWGS-Docs-Pages/assets/js/runtime~main.4be36e19.js" defer="defer"></script>
-<script src="/UGA-WebDAWGS-Docs-Pages/assets/js/main.a8346a24.js" defer="defer"></script>
+<script src="/UGA-WebDAWGS-Docs-Pages/assets/js/runtime~main.9426cdf5.js" defer="defer"></script>
+<script src="/UGA-WebDAWGS-Docs-Pages/assets/js/main.7192ddd7.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -19,7 +19,7 @@
 <div style="float:right;width:40%;margin:0 0 1rem 1rem;border:1px solid #ddd;border-radius:8px;padding:4px;background-color:#f9f9f9;box-shadow:0 2px 4px rgba(0,0,0,0.05);display:inline-block"><img src="/UGA-WebDAWGS-Docs-Pages/assets/images/db-create-account-848b0a646a3ead5114d32fcd47512468.png" alt="create an atlas account"><div style="margin-top:0.5rem;text-align:center;font-family:&quot;Architects Daughter&quot;, cursive;font-size:0.9rem;color:#555">Sign up for a Mongo Atlas Account</div></div>
 <p>We will use a free MongoDB cloud service called Atlas.<br>
 <!-- -->Follow setup instructions on the mongo site:
-<a href="https://www.mongodb.com/docs/atlas/getting-started/" target="_blank" rel="noopener noreferrer" class="">Getting Started with Mongo Atlas Database</a></p>
+<a href="https://www.mongodb.com/cloud/atlas/register" target="_blank" rel="noopener noreferrer" class="">Getting Started with Mongo Atlas Database</a></p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="follow-steps">Follow Steps<a href="#follow-steps" class="hash-link" aria-label="Direct link to Follow Steps" title="Direct link to Follow Steps" translate="no">​</a></h2>
 <ol>
 <li class=""><strong>Register/signup</strong> for an Atlas account.</li>
@@ -28,11 +28,11 @@
 <hr>
 <div style="float:right;width:40%;margin:0 0 1rem 1rem;border:1px solid #ddd;border-radius:8px;padding:4px;background-color:#f9f9f9;box-shadow:0 2px 4px rgba(0,0,0,0.05);display:inline-block"><img src="/UGA-WebDAWGS-Docs-Pages/assets/images/db-create-a-cluster-4e651cc3e7d15b15378a176f9841ded5.png" alt="create an atlas cluster"><div style="margin-top:0.5rem;text-align:center;font-family:&quot;Architects Daughter&quot;, cursive;font-size:0.9rem;color:#555">Create a Cluster</div></div>
 <ol start="2">
-<li class="">Create and deploy a <strong>free cluster</strong>. Atlas creates an
-organization and project for you.  From there create a cluster.</li>
+<li class="">Build a <strong>Cluster</strong>.</li>
 </ol>
 <ul>
-<li class="">For the cluster tier, pick M0, which is the free tier. In the Name input box, enter the name items  for your collection name.</li>
+<li class="">Select <strong>Build a Database</strong>.  Atlas creates an organization and project for you.</li>
+<li class="">Choose the free, shared cluster tier, M0. In the Name input box, enter the name <em>items</em> for your collection name.</li>
 <li class=""><strong>Uncheck</strong> the Automate security setup box.</li>
 <li class=""><strong>Uncheck</strong> the Preload sample dataset box.</li>
 <li class="">Choose your favorite cloud provider and the region closest to you.</li>
@@ -48,15 +48,15 @@ address 0.0.0.0/0 for access from any IP address.</li>
 </ul>
 <ol start="4">
 <li class="">Manage database users for your cluster. Create a database
-user. Pick any username and password you want. They will be used
-when you want to connect to your database.</li>
+user. Pick any <strong>username</strong> and <strong>password</strong> you want. They will be used
+when you want to connect to your database. (Save these!)</li>
 </ol>
 <ul>
 <li class="">Click <strong>Create Database User</strong> to create the user.</li>
 </ul>
 <ol start="5">
 <li class="">
-<p>Connection method: Choose the <strong>Drivers</strong> connection method.  From here you will get the
+<p>Connect: Choose the <strong>Drivers</strong> connection method.  From here you will get the
 connection string you need to connect to your database.</p>
 </li>
 <li class="">
@@ -64,8 +64,10 @@ connection string you need to connect to your database.</p>
 </li>
 </ol>
 <div style="border:1px solid #ccc;border-radius:8px;overflow:hidden;margin-bottom:1rem;box-shadow:0 4px 8px rgba(0, 0, 0, 0.05)"><div style="background-color:#f5f5f5;padding:0.5rem 1rem;border-bottom:1px solid #ddd;display:flex;align-items:center;gap:0.4rem"><span style="width:12px;height:12px;border-radius:50%;background-color:#ff5f56;display:inline-block"></span><span style="width:12px;height:12px;border-radius:50%;background-color:#ffbd2e;display:inline-block"></span><span style="width:12px;height:12px;border-radius:50%;background-color:#27c93f;display:inline-block"></span></div><div style="padding:1rem;background-color:#fff"><img src="/UGA-WebDAWGS-Docs-Pages/assets/images/server-db-copy-connection-string-4d8cb8f7092469ff1c3df722c953ed9d.png" width="60%" alt="atlas copy connection string"></div></div>
+<div class="theme-admonition theme-admonition-danger admonition_xJq3 alert alert--danger"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"></path></svg></span>danger</div><div class="admonitionContent_BuS1"><p>Do NOT install Atlas CLI, Docker, or MongoDB locally.  You are using MongoDB Atlas (cloud version)
+in the browser.</p></div></div>
 <ol start="7">
-<li class="">Choose the <strong>Add my own Data</strong> and enter a database name and collection name.<br>
+<li class=""><em>Optional</em>: Choose the <strong>Add my own Data</strong> and enter a database name and collection name.<br>
 <!-- -->The example below was created for the UGAitems class demo.</li>
 </ol>
 <div style="width:70%;margin:0 0 1rem 0;border:1px solid #ddd;border-radius:8px;padding:4px;background-color:#f9f9f9;box-shadow:0 2px 4px rgba(0,0,0,0.05);display:inline-block"><img src="/UGA-WebDAWGS-Docs-Pages/assets/images/db-create-a-db-d390d2c9f7edf99e950c91fdea6bb7ea.png" alt="create a database"><div style="margin-top:0.5rem;text-align:center;font-family:&quot;Architects Daughter&quot;, cursive;font-size:0.9rem;color:#555">Create a Database</div></div>
